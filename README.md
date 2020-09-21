@@ -3,5 +3,10 @@ This repository is for depositing codes used in the manuscript, titled "CAG RNAs
 
 Two customized scripts were designed for analysis small CAG RNAs using small RNA-seq data. The usages of the two scripts are as following.
 
-1. 
+1. CAG_sRNA_quantification.pl
+This script intends to identify all sequences containing only "CAG" from a .fastq file, typically from small RNA-seq (sRNA-seq). The script accepts an standard input and out a two-column file, with the first column showing the unique "CAG"-containing sequences and the second one as the unique read count. Assuming the file name of a .fastq file is "sRNA_seq.fastq" and the output file is "output.txt". The usage is as following.
+
+cat sRNA_seq.fastq | perl CAG_sRNA_quantification.pl output.txt
+
+2. 
 
