@@ -1,10 +1,10 @@
 #!/bin/perl
 #Author: ALin
 #Purpose: To combine the HTSeq output as indicated by a list. The list should contain the file name only. Option can be indicated by whether to normalize or not. Normalization is sample-based.
-#Usage: perl combine_cufflinks_genes.pl [option] <input list> <output>
+#Usage: perl combine_htseq_counts.pl [option] <input list> <output>
 
 if(@ARGV < 2){
-	print "#Usage: perl combine_cufflinks_genes.pl [option] <input list> <output>\n";
+	print "#Usage: perl combine_htseq_counts.pl [option] <input list> <output>\n";
 	print "Options:\n";
 	print "\t-n String Integer\tInput of a normlization file, where the column (zero-based) used for normalization is indicated by the file name and an integer\n";
 	exit;
@@ -44,7 +44,7 @@ if($NORMALIZATION eq "TRUE"){
 		@line = split('\t', $line);
 		push(@nor_factors, $line[$NOR_COL]);
 	}
-close NOR;
+	close NOR;
 }
 
 my $samples_count = 0;
