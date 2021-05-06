@@ -1,5 +1,5 @@
 # CAG_RNA_toxicity
-This repository is for depositing codes used in the manuscript, titled "CAG RNAs induce DNA damage and apoptosis by silencing NUDT16 expression in polyglutamine degeneration".
+This repository is for depositing codes used in the manuscript, titled "CAG RNAs induce DNA damage and apoptosis by silencing NUDT16 expression in polyglutamine degeneration" (https://doi.org/10.1073/pnas.2022940118).
 
 Three customized scripts were designed for analysis small CAG RNAs using small RNA-seq data. The usages of the three scripts are as following.
 
